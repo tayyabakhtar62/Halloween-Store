@@ -1,0 +1,231 @@
+* {
+	margin: 0;
+	padding: 0;
+    height: auto;
+    
+}
+html {
+	background-image: url("images/bats.gif");
+    background-repeat: repeat;
+    padding: 30px; /*move body of website page*/
+}
+ul{
+	align-content:flex-start;
+	margin-top: -250px;
+	margin-left: 30px;
+	
+}
+#links{
+	width: 150px;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+  }
+body {
+	font-family: sans-serif;
+    font-size: 100%;
+    width: 960px;
+    background-color: white;
+    border: 3px solid #333300;
+    
+}
+
+a:link {
+	font-style: sans-serif;
+    color:#ff9933 ;
+}
+
+header img {
+	float: left;
+}
+
+
+/* the styles for the header */
+header {
+    padding: 1.5em  2em 0;
+	border-bottom: 3px solid black;
+    line-height: 25px;
+    background: linear-gradient(to bottom left, #333300 0%, orange 60%, #ffffff 100%);
+}
+
+h3:first-letter {
+    float: left;
+    font-size: 45px;
+    line-height: 13px;
+    
+    
+}
+/* the styles for the header */
+header h2 {
+	font-size: 250%;
+	color: black;
+	text-indent: 30px;
+    font-weight: 900;
+    
+}
+header h3 {
+	font-size: 130%;
+	text-indent: 30px;
+}
+
+header h1 {
+	font-size: 130%;
+	text-indent: 30px;
+
+}
+
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 130px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: orange;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+    
+}
+
+#nav_menu ul li a:hover {
+  background-color: #ccc; 
+}
+    
+
+
+/*The Style for Vertical menu*/
+
+
+#nav_list ul {
+    list-style-type: none;
+    margin-left: .5em;
+}
+
+#nav_list ul li{
+    width: 130px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+
+#nav_list ul li a{
+    display: block;
+    padding: .5em 0 .5em 1em;
+    
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background-color: orange; 
+}
+
+#nav-list ul a.current {
+    background-color: aliceblue;
+}
+
+/* the styles for the main content */
+main {
+	
+    padding: 30px;
+}
+main  h1 {
+	font-size: 150%;
+    font-weight: 750;
+
+}
+main h2 {
+	color: black;
+	font-size: 250%;
+    padding: .5em 0 .25em 0;
+    
+}
+main  h3 {
+	font-size: 150%;
+    padding-bottom: .25em;
+
+}
+
+main img {
+	padding-bottom: 1em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main ul {
+	padding: 0 0 .25em 1.25em;
+}
+main li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the section */
+section {
+	width: 160px;
+	float: left;
+	padding: 0 20px 20px 20px;
+}
+
+/* mobile landscape to tablet portrait */
+
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;     
+        
+}
+    #mobile_menu {
+		display: block;
+	}
+
+/* mobile portrait to mobile landscape */
+        
+@media only screen and (max-width: 800px) {
+	body { font-size: 90%; }
+    
+/* the styles for the footer */
+footer {
+    border-top: 3px solid black;
+	background: linear-gradient(to bottom left, #ffffff 0%, orange 60%, #333300 100%);
+    clear: both;
+    
+
+}
+footer p {
+	text-align: center;
+	color: black;
+	padding: 1em 0;
+}
